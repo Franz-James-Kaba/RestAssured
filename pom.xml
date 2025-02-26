@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.lab</groupId>
-  <artifactId>API Test Rest Assured</artifactId>
+  <artifactId>api-test-rest-assured</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 

@@ -33,4 +33,21 @@ public class ReadTests {
         when().get("https://reqres.in/api/users/2").then().assertThat().contentType(ContentType.JSON);
     }
 
+    @Test
+    public void testNotFoundUser(){
+        when().
+                get("https://reqres.in/api/users/23").
+                then().
+                statusCode(404);
+    }
+//    @Test
+//    public void testFailGetSpecificUser() {
+//        when().
+//                get("https://reqres.in/api/users/2").
+//                then().
+//                statusCode(201).
+//                body("data.id", equalTo(2)).
+//                body("data.email", equalTo("janet.weaver@reqres.in"));
+//    }
+
 }
