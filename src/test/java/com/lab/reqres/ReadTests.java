@@ -1,5 +1,7 @@
 package com.lab.reqres;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
@@ -13,6 +15,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 
 @ExtendWith(AllureJunit5.class)
+@Epic("User Management")
+@Feature("Get User")
 public class ReadTests {
     @BeforeAll
     static void setup (){
